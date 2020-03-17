@@ -4,7 +4,7 @@
 #
 Name     : perl-Glib
 Version  : 1.3292
-Release  : 4
+Release  : 5
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3292.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3292.tar.gz
 Summary  : 'Perl wrappers for the GLib utility and Object libraries'
@@ -31,7 +31,6 @@ projects.
 Summary: dev components for the perl-Glib package.
 Group: Development
 Provides: perl-Glib-devel = %{version}-%{release}
-Requires: perl-Glib = %{version}-%{release}
 Requires: perl-Glib = %{version}-%{release}
 
 %description dev
@@ -145,49 +144,49 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/BookmarkFile.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Boxed.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Bytes.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/CodeGen.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Error.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Flags.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/GenPod.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Install/Files.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Install/doctypes
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Install/gperl.h
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Install/gperl_marshal.h
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Install/typemap
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/KeyFile.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Log.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/MainLoop.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/MakeHelper.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Markup.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Object.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Object/Subclass.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/OptionContext.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/OptionGroup.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Boolean.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Double.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Enum.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Flags.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/GType.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Int.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Int64.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/String.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/UInt.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/UInt64.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Param/Unichar.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/ParamSpec.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/ParseXSDoc.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Signal.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Type.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Utils.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/Variant.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/VariantDict.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/VariantType.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/devel.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/index.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/version.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Glib/xsapi.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Glib/Glib.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/BookmarkFile.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Boxed.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Bytes.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/CodeGen.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Error.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Flags.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/GenPod.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Install/Files.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Install/doctypes
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Install/gperl.h
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Install/gperl_marshal.h
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Install/typemap
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/KeyFile.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Log.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/MainLoop.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/MakeHelper.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Markup.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Object.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Object/Subclass.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/OptionContext.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/OptionGroup.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Boolean.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Double.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Enum.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Flags.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/GType.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Int.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Int64.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/String.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/UInt.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/UInt64.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Param/Unichar.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/ParamSpec.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/ParseXSDoc.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Signal.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Type.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Utils.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/Variant.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/VariantDict.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/VariantType.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/devel.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/index.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/version.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Glib/xsapi.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Glib/Glib.so
