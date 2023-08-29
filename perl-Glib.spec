@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-Glib
-Version  : 1.3293
-Release  : 20
-URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3293.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3293.tar.gz
+Version  : 1.3294
+Release  : 21
+URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3294.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3294.tar.gz
 Summary  : 'Perl wrappers for the GLib utility and Object libraries'
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -59,8 +59,11 @@ perl components for the perl-Glib package.
 
 
 %prep
-%setup -q -n Glib-1.3293
-cd %{_builddir}/Glib-1.3293
+%setup -q -n Glib-1.3294
+cd %{_builddir}/Glib-1.3294
+pushd ..
+cp -a Glib-1.3294 buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -95,6 +98,7 @@ find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
 find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %{_fixperms} %{buildroot}/*
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
