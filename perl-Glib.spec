@@ -5,7 +5,7 @@
 #
 Name     : perl-Glib
 Version  : 1.3294
-Release  : 22
+Release  : 23
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3294.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3294.tar.gz
 Summary  : 'Perl wrappers for the GLib utility and Object libraries'
